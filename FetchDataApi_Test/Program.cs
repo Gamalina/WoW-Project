@@ -16,8 +16,8 @@ namespace FetchDataApi_Test
             string clientId = "33a49346d7034b2581ee752523b6db30";
             string clientSecret = "xItQKoZcyW8reQ6bBDF540Y3n6xm5e96";
 
-            string realm = "tarren-mill";
-            string characterName = "gamalina";
+            string realm = "bronze-dragonflight";
+            string characterName = "aethiops";
 
             string accessToken = await GetAccessToken(clientId, clientSecret);
 

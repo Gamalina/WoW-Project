@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientLibrary", "ClientLibr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerLibrary", "ServerLibrary\ServerLibrary.csproj", "{E2F791DA-C617-4554-BD0B-0B74E8486498}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FetchDataApi", "FetchDataApi\FetchDataApi.csproj", "{202DE2D5-97F2-44DD-B198-4281CBABFBD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FetchDataApi", "FetchDataApi\FetchDataApi.csproj", "{202DE2D5-97F2-44DD-B198-4281CBABFBD2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FetchDataApi_Test", "FetchDataApi_Test\FetchDataApi_Test.csproj", "{35A592AF-A1E2-4059-90DA-54822942FFBB}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "wow-project-react", "WoW-Project-React\wow-project-react.esproj", "{CE2733A4-4139-4E62-9CB1-06F2CF602DED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,12 @@ Global
 		{35A592AF-A1E2-4059-90DA-54822942FFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35A592AF-A1E2-4059-90DA-54822942FFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35A592AF-A1E2-4059-90DA-54822942FFBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE2733A4-4139-4E62-9CB1-06F2CF602DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE2733A4-4139-4E62-9CB1-06F2CF602DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE2733A4-4139-4E62-9CB1-06F2CF602DED}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CE2733A4-4139-4E62-9CB1-06F2CF602DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE2733A4-4139-4E62-9CB1-06F2CF602DED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE2733A4-4139-4E62-9CB1-06F2CF602DED}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
