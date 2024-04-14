@@ -1,8 +1,38 @@
 ﻿@page "/"
+@inject HttpClient Http
 
+<h1>Enter Character Details</h1>
 
-<PageTitle>Home</PageTitle>
+<EditForm Model="characterDetails" OnValidSubmit="GetCharacterData">
+    <InputText id="characterName" @bind-Value="characterDetails.CharacterName" placeholder="Character Name" />
+    <InputText id="realm" @bind-Value="characterDetails.Realm" placeholder="Realm" />
+    <button type="submit">Submit</button>
+</EditForm>
 
-<h1>Hello, world!</h1>
+@if (character != null)
+{
+    <h2>@character.Name</h2>
+    <!-- Display other character data here -->
+}
 
-Welcome to your new app.
+@code {
+    private CharacterDetails characterDetails = new CharacterDetails();
+    private Character character;
+
+    private async Task GetCharacterData()
+    {
+        character = await Http.GetFromJsonAsync<Character>($"api/UnknownName/{characterDetails.Realm}/{characterDetails.CharacterName}");
+    }
+
+    public class CharacterDetails
+    {
+        public string CharacterName { get; set; }
+        public string Realm { get; set; }
+    }
+
+    public class Character
+    {
+        public string Name { get; set; }
+        // Other properties...
+    }
+}
