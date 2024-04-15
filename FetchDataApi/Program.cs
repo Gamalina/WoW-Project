@@ -24,6 +24,5 @@ public class AccessTokenResponse
 }
 
 
-GetAccessToken("33a49346d7034b2581ee752523b6db30", "xItQKoZcyW8reQ6bBDF540Y3n6xm5e96");
 
 Console.WriteLine(access);
